@@ -61,11 +61,11 @@ import React, { useState } from 'react';
 
 
 
-const Tour = ({ image, date, title, info, location, id, onDelete }) => {
+const Tour = ({ image, date, title, info, location, id, handleDeleteItem }) => {
   const [visible, setVisible] = useState(true);
 
   const handleDelete = () => {
-    onDelete(id); // Pass the tour's ID to the parent component for deletion
+    handleDeleteItem(id); // Pass the tour's ID to the parent component for deletion
     setVisible(false); // Hide the tour
   };
 
