@@ -33,6 +33,7 @@ import Services  from './components/Services';
 import Tours from './components/Tours';
 import Hero from './components/Hero';
 import About from './components/About';
+import Registration from './components/Registration';
 
 function App() {
 return (
@@ -43,6 +44,7 @@ return (
 <Route path="/services" element={<Services />} />
 <Route path="/tours" element={<Tours />} />
 <Route path="/about" element={<About />} />
+<Route path="/registration" element={<Registration />} />
 </Routes>
 </BrowserRouter>
 );
